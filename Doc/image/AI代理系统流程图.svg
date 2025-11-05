@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f9f9f9" />
+  
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">AI代理系统流程图</text>
+  
+  <!-- 用户层 -->
+  <rect x="50" y="80" width="200" height="120" rx="10" fill="#e6f3ff" stroke="#3399ff" stroke-width="2" />
+  <text x="150" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">用户层</text>
+  
+  <!-- 用户层组件 -->
+  <circle cx="100" cy="150" r="20" fill="#3399ff" />
+  <text x="100" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">用户</text>
+  
+  <rect x="140" y="130" width="120" height="40" rx="5" fill="#66b3ff" />
+  <text x="200" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">用户配置界面</text>
+  
+  <!-- AI代理核心层 -->
+  <rect x="300" y="80" width="200" height="250" rx="10" fill="#e6ffe6" stroke="#33cc33" stroke-width="2" />
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">AI代理核心层</text>
+  
+  <!-- AI代理核心层组件 -->
+  <rect x="320" y="130" width="160" height="30" rx="5" fill="#66e666" />
+  <text x="400" y="150" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">策略管理模块</text>
+  
+  <rect x="320" y="180" width="160" height="30" rx="5" fill="#66e666" />
+  <text x="400" y="200" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">交易执行引擎</text>
+  
+  <rect x="320" y="230" width="160" height="30" rx="5" fill="#66e666" />
+  <text x="400" y="250" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">市场监控模块</text>
+  
+  <rect x="320" y="280" width="160" height="30" rx="5" fill="#66e666" />
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">风险管理模块</text>
+  
+  <!-- 区块链交互层 -->
+  <rect x="550" y="80" width="200" height="180" rx="10" fill="#fff0e6" stroke="#ff9966" stroke-width="2" />
+  <text x="650" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">区块链交互层</text>
+  
+  <!-- 区块链交互层组件 -->
+  <rect x="570" y="130" width="160" height="30" rx="5" fill="#ffccb3" />
+  <text x="650" y="150" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">区块链接口模块</text>
+  
+  <rect x="570" y="180" width="70" height="25" rx="5" fill="#ffccb3" />
+  <text x="605" y="197" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">DeFi协议</text>
+  
+  <rect x="660" y="180" width="70" height="25" rx="5" fill="#ffccb3" />
+  <text x="695" y="197" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">智能合约</text>
+  
+  <!-- 结算与审计层 -->
+  <rect x="300" y="350" width="200" height="180" rx="10" fill="#f0e6ff" stroke="#9966ff" stroke-width="2" />
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">结算与审计层</text>
+  
+  <!-- 结算与审计层组件 -->
+  <rect x="320" y="410" width="160" height="30" rx="5" fill="#ccb3ff" />
+  <text x="400" y="430" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">结算模块</text>
+  
+  <rect x="320" y="460" width="160" height="30" rx="5" fill="#ccb3ff" />
+  <text x="400" y="480" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">审计日志模块</text>
+  
+  <rect x="320" y="510" width="160" height="30" rx="5" fill="#ccb3ff" />
+  <text x="400" y="530" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">绩效评估模块</text>
+  
+  <!-- 连接线 -->
+  <!-- 用户到配置界面 -->
+  <line x1="120" y1="150" x2="140" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- 配置界面到策略管理 -->
+  <line x1="260" y1="150" x2="320" y2="145" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- 策略管理到交易执行 -->
+  <line x1="400" y1="160" x2="400" y2="180" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- 交易执行到市场监控 -->
+  <line x1="400" y1="210" x2="400" y2="230" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- 市场监控到策略管理 -->
+  <path d="M480 250 Q500 250 500 150 Q500 130 480 130" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- 交易执行到风险管理 -->
+  <line x1="400" y1="230" x2="400" y2="280" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- 风险管理到交易执行 -->
+  <line x1="420" y1="280" x2="420" y2="210" stroke="#333" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+  
+  <!-- 交易执行到区块链接口 -->
+  <line x1="480" y1="200" x2="570" y2="145" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- 区块链接口到DeFi协议 -->
+  <line x1="650" y1="160" x2="650" y2="180" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- 区块链接口到智能合约 -->
+  <line x1="695" y1="160" x2="695" y2="180" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- 交易执行到结算模块 -->
+  <line x1="400" y1="210" x2="400" y2="410" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- 交易执行到审计日志 -->
+  <line x1="450" y1="200" x2="450" y2="460" stroke="#333" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+  
+  <!-- 结算模块到绩效评估 -->
+  <line x1="400" y1="460" x2="400" y2="510" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- 审计日志到绩效评估 -->
+  <line x1="370" y1="480" x2="370" y2="510" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- 绩效评估到用户配置界面 -->
+  <path d="M320 530 Q250 530 250 170" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- 箭头标记 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+</svg>
